@@ -102,8 +102,26 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 		print("Contributions:")
 		print("RealPacket | refactoring")
 	end
-
-	title.Text = WindowOptions.Name
+	spawn(function()
+		if guiloadname == true then
+		local awefwef = nmawdewf
+		for m=1,250 do
+			wefasd = awefwef:sub(m, m)
+				if wefasd == "" then
+			else
+				wefasdrgegasd = m
+				end
+			end
+		for m=1,wefasdrgegasd do
+		asdwefsa = awefwef:sub(-m,m)
+		wait(0)
+		title.Text = WindowOptions.Name
+		end
+	else
+		title.Text = WindowOptions.Name
+	end
+	end)
+	
 
 	mainFrame.ClipsDescendants = true
 	mainFrame.BackgroundTransparency = 1
