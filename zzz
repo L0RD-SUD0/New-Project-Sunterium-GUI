@@ -94,6 +94,8 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 
 	if WindowOptions.Name == nil then
 		error("Required setting 'Name' not given")
+	else
+		namemem = WindowOptions.Name
 	end
 
 	if WindowOptions.Keybind == nil then
@@ -109,7 +111,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 	spawn(function()
 		if loadingnamegui == true then
 			wait(1)
-		local awefwef = nmawdewf
+		local awefwef = namemem
 		for m=1,250 do
 			wefasd = awefwef:sub(m, m)
 				if wefasd == "" then
