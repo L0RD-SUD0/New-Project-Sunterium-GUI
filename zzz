@@ -103,7 +103,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 		print("RealPacket | refactoring")
 	end
 	spawn(function()
-		if guiloadname == true then
+		if loadingnamegui == true then
 		local awefwef = nmawdewf
 		for m=1,250 do
 			wefasd = awefwef:sub(m, m)
