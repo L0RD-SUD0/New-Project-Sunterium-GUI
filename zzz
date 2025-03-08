@@ -108,6 +108,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 	end
 	spawn(function()
 		if loadingnamegui == true then
+			wait(1)
 		local awefwef = nmawdewf
 		for m=1,250 do
 			wefasd = awefwef:sub(m, m)
