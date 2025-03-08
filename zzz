@@ -13,7 +13,6 @@
 	pls dont sue me
 
 ]]--
-print("newlel6955")
 
 local rolibwaita = {}
 
@@ -110,7 +109,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 	end
 	spawn(function()
 		if loadingnamegui == true then
-			wait(1)
+			wait(0.5)
 		local awefwef = namemem
 		for m=1,250 do
 			wefasd = awefwef:sub(m, m)
@@ -122,9 +121,9 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 		for m=1,wefasdrgegasd do
 		asdwefsa = awefwef:sub(-m,m)
 		wait(0)
-		title.Text = WindowOptions.Name
+		title.Text = asdwefsa
 		end
-	else
+	elseif loadingnamegui == false then
 		title.Text = WindowOptions.Name
 	end
 	end)
@@ -138,7 +137,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 	closeButton.Icon.ImageTransparency = 1
 	searchButton.Icon.ImageTransparency = 1
 	sideBar.Position = UDim2.new(0, -195, 0.5, 0)
-	mainFrame.Size = UDim2.new(0, 50, 0, 20)
+	mainFrame.Size = UDim2.new(0, 80, 0, 50)
 
 	if WindowOptions.UseCoreGui then
 		guiClone.Parent = CoreGui
