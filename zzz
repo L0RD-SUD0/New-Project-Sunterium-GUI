@@ -147,7 +147,7 @@ function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 
 	guiClone.Enabled = true
 
-	createTween(mainFrame, TweenPresets.Slow, { Size = UDim2.new(0, 635, 0, 400) })
+	createTween(mainFrame, TweenPresets.Slow, { Size = UDim2.new(0, 617, 0, 345) })
 	task.wait(0.1)
 	createTween(mainFrame, TweenPresets.Slow, { BackgroundTransparency = 0 })
 	task.wait(0.6)
