@@ -919,7 +919,7 @@ end
 		local ScreenGui = Instance.new("ScreenGui")
 		local Button = Instance.new("TextButton")
 		
-		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		ScreenGui.Parent = game:GetService("CoreGui")
 		
 		Button.Name = "Button"
 		Button.Parent = ScreenGui
