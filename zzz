@@ -75,6 +75,7 @@ end
 function rolibwaita:NewWindow(WindowOptions: WindowOptions)
 	local TabTable = {}
 	local guiClone = Gui:Clone()
+	guiClone.Name = "Project Sunterium GUI"
 	local mainFrame = guiClone.Main
 	local mainCover = mainFrame.Cover
 	local sideBar = mainFrame.SideBar
