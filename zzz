@@ -916,13 +916,13 @@ end
 		
 		hidegui = false
 		
-		local ScreenGui = Instance.new("ScreenGui")
+		local sunteriumhigeandshowgui = Instance.new("ScreenGui")
 		local Button = Instance.new("TextButton")
 		
-		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		sunteriumhigeandshowgui.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
 		
 		Button.Name = "Button"
-		Button.Parent = ScreenGui
+		Button.Parent = sunteriumhigeandshowgui
 		Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		Button.BorderColor3 = Color3.fromRGB(255, 255, 0)
 		Button.BorderSizePixel = 1
