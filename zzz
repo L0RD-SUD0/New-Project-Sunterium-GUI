@@ -919,7 +919,7 @@ end
 		local ScreenGui = Instance.new("ScreenGui")
 		local Button = Instance.new("TextButton")
 		
-		ScreenGui.Parent = game:GetService("CoreGui")
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 		
 		Button.Name = "Button"
 		Button.Parent = ScreenGui
@@ -946,7 +946,7 @@ end
 				sunteriumguizzzz.Main.Topbar.Visible = true
 			elseif hidegui == false then
 				hidegui = true
-				Button.Text = "UnHide GUI"
+				Button.Text = "Show GUI"
 				sunteriumguizzzz.Main.Visible = false
 				sunteriumguizzzz.Main.Cover.Visible = false
 				sunteriumguizzzz.Main.SideBar.Visible = false
