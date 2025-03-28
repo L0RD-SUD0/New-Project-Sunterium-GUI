@@ -919,7 +919,7 @@ end
 		local sunteriumhigeandshowgui = Instance.new("ScreenGui")
 		local Button = Instance.new("TextButton")
 		
-		sunteriumhigeandshowgui.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+		sunteriumhigeandshowgui.Parent = game:GetService("CoreGui")
 		
 		Button.Name = "Button"
 		Button.Parent = sunteriumhigeandshowgui
