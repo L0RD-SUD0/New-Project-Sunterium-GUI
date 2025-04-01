@@ -96,6 +96,52 @@ end
 	   local startMouse, startSize
 	   local resizing = false
 	   local guiHidden = false
+
+	      -- HIDE BUTTON --
+
+   sunteriumguizzzz = guiClone
+		
+   hidegui = false
+   
+   local sunteriumhigeandshowgui = Instance.new("ScreenGui")
+   local Button = Instance.new("TextButton")
+   
+   sunteriumhigeandshowgui.Parent = game:GetService("CoreGui")
+   
+   Button.Name = "Button"
+   Button.Parent = sunteriumhigeandshowgui
+   Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+   Button.BorderColor3 = Color3.fromRGB(255, 255, 0)
+   Button.BorderSizePixel = 1
+   Button.Position = UDim2.new(0.0784190744, 0, 0.15577893, 0)
+   Button.Size = UDim2.new(0, 62, 0, 56)
+   Button.Font = Enum.Font.SourceSans
+   Button.Text = "Hide GUI"
+   Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+   Button.TextScaled = true
+   Button.TextSize = 14.000
+   Button.TextWrapped = true
+   Button.Draggable = true
+   
+   Button.MouseButton1Down:connect(function()
+	   if hidegui == true then
+		   hidegui = false
+		   Button.Text = "Hide GUI"
+		   sunteriumguizzzz.Main.Visible = true
+		   sunteriumguizzzz.Main.Cover.Visible = true
+		   sunteriumguizzzz.Main.SideBar.Visible = true
+		   sunteriumguizzzz.Main.Tabs.Visible = true
+		   sunteriumguizzzz.Main.Topbar.Visible = true
+	   elseif hidegui == false then
+		   hidegui = true
+		   Button.Text = "Show GUI"
+		   sunteriumguizzzz.Main.Visible = false
+		   sunteriumguizzzz.Main.Cover.Visible = false
+		   sunteriumguizzzz.Main.SideBar.Visible = false
+		   sunteriumguizzzz.Main.Tabs.Visible = false
+		   sunteriumguizzzz.Main.Topbar.Visible = false
+	   end
+   end)
    
 	   if WindowOptions.Name == nil then
 		   error("Required setting 'Name' not given")
@@ -912,48 +958,6 @@ end
 				   end)
 
 				   closeButton:Destroy()
-		sunteriumguizzzz = guiClone
-		
-		hidegui = false
-		
-		local sunteriumhigeandshowgui = Instance.new("ScreenGui")
-		local Button = Instance.new("TextButton")
-		
-		sunteriumhigeandshowgui.Parent = game:GetService("CoreGui")
-		
-		Button.Name = "Button"
-		Button.Parent = sunteriumhigeandshowgui
-		Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		Button.BorderColor3 = Color3.fromRGB(255, 255, 0)
-		Button.BorderSizePixel = 1
-		Button.Position = UDim2.new(0.0784190744, 0, 0.15577893, 0)
-		Button.Size = UDim2.new(0, 62, 0, 56)
-		Button.Font = Enum.Font.SourceSans
-		Button.Text = "Hide GUI"
-		Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-		Button.TextScaled = true
-		Button.TextSize = 14.000
-		Button.TextWrapped = true
-		
-		Button.MouseButton1Down:connect(function()
-			if hidegui == true then
-				hidegui = false
-				Button.Text = "Hide GUI"
-				sunteriumguizzzz.Main.Visible = true
-				sunteriumguizzzz.Main.Cover.Visible = true
-				sunteriumguizzzz.Main.SideBar.Visible = true
-				sunteriumguizzzz.Main.Tabs.Visible = true
-				sunteriumguizzzz.Main.Topbar.Visible = true
-			elseif hidegui == false then
-				hidegui = true
-				Button.Text = "Show GUI"
-				sunteriumguizzzz.Main.Visible = false
-				sunteriumguizzzz.Main.Cover.Visible = false
-				sunteriumguizzzz.Main.SideBar.Visible = false
-				sunteriumguizzzz.Main.Tabs.Visible = false
-				sunteriumguizzzz.Main.Topbar.Visible = false
-			end
-		end)
    
 				   local onToggleConnection = toggleClone.Hitbox.MouseButton1Click:Connect(function()
 					   if ToggleOptions.Callback ~= nil then
