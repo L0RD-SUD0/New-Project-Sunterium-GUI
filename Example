@@ -1,3 +1,5 @@
+-- Credits to rolibwaita. I didn't make this GUI! I'm just modify it! --
+
 loadingnamegui = true -- Set this to true if you want the GUI Name loading like Project Sunterium--
 
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/L0RD-SUD0/New-Project-Sunterium-GUI/refs/heads/main/zzz"))() -- BTW THIS IS A SOURCE CODE! You can modify it by yourself! --
