@@ -33,7 +33,7 @@ end
    local Players = game:GetService("Players")
    local LocalPlayer = Players.LocalPlayer
    local PlayerGui = LocalPlayer.PlayerGui
-   local CoreGui = gethui() or game:GetService("CoreGui")
+   local CoreGui = game:GetService("CoreGui")
    local Mouse = LocalPlayer:GetMouse()
    
    local Examples = Assets.Examples
