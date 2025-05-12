@@ -19,7 +19,7 @@ if executedgui == true then
 end
    executedgui = true
    
-   local rolibwaita = {}
+   local sunteriumguippppp = {}
    
    if loadingnamegui == nil then
 	   loadingnamegui = false
@@ -33,7 +33,7 @@ end
    local Players = game:GetService("Players")
    local LocalPlayer = Players.LocalPlayer
    local PlayerGui = LocalPlayer.PlayerGui
-   local CoreGui = game:GetService("CoreGui")
+   local CoreGui = gethui() or game:GetService("CoreGui")
    local Mouse = LocalPlayer:GetMouse()
    
    local Examples = Assets.Examples
@@ -72,7 +72,7 @@ end
    
    -- \\ Main // --
    
-   function rolibwaita:NewWindow(WindowOptions: WindowOptions)
+   function sunteriumguippppp:NewWindow(WindowOptions: WindowOptions)
 	   local TabTable = {}
 	   local guiClone = Gui:Clone()
 	   guiClone.Name = "Project Sunterium GUI"
@@ -96,6 +96,8 @@ end
 	   local startMouse, startSize
 	   local resizing = false
 	   local guiHidden = false
+
+	   title.Text = ""
 
 	      -- HIDE BUTTON --
 
@@ -1607,4 +1609,4 @@ end
 	   return window
    end
    
-   return rolibwaita
+   return sunteriumguippppp
