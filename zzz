@@ -1,7 +1,5 @@
-mess = [[
-This script is discontinued. I'm not working on this anymore. And there's no any new updates. Most of scripts are patched.
+mess = [[This script is discontinued. I'm not working on this anymore. And there's no any new updates. Most of scripts are patched.
 Message By Lord Sudo.
 PSSTTT I'M WORKING ON A NEW SCRIPT WITH MY FRIEND. AND THIS TIME IT WILL NOT BE THE SAME. AND THE NAME IS "Nigh******" CAN'T TELL MUCH!
-https://discord.gg/WsUkhmVJ8h
-]]
+https://discord.gg/WsUkhmVJ8h]]
 game.Players.LocalPlayer:Kick(mess)
