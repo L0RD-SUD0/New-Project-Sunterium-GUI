@@ -1,3 +1,8 @@
+spawn(function()
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="Lord Sudo",Text="This script is outdated! And not updating anymore.", Button1 = "OK" ,Duration=10})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="Lord Sudo",Text="Please join my new server! The link is copied!", Button1 = "OK" ,Duration=10})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="Lord Sudo",Text="I just come back. But much more better. And no more mistakes.", Button1 = "OK" ,Duration=10})
+end)
 --[[
 
 	THIS GUI DIDN'T MADE BY LORD SUDO
@@ -14,9 +19,12 @@
 
 ]]--
 
+setclipboard("https://discord.gg/WsUkhmVJ8h")
+
 if getgevn().executedgui == true then
 	return
 end
+
    getgevn().executedgui = true
    
    local sunteriumguippppp = {}
