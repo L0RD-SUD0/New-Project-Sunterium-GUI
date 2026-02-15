@@ -1,4 +1,3 @@
-setclipboard("https://discord.gg/WsUkhmVJ8h")
 --[[
 
 	THIS GUI DIDN'T MADE BY LORD SUDO
@@ -15,10 +14,10 @@ setclipboard("https://discord.gg/WsUkhmVJ8h")
 
 ]]--
 
-if executedgui == true then
+if getgevn().executedgui == true then
 	return
 end
-   executedgui = true
+   getgevn().executedgui = true
    
    local sunteriumguippppp = {}
    
