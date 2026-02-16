@@ -14,10 +14,10 @@
 
 ]]--
 
-if getgevn().executedgui == true then
+if getgenv().executedgui == true then
 	return
 end
-   getgevn().executedgui = true
+   getgenv().executedgui = true
    
    local sunteriumguippppp = {}
    
